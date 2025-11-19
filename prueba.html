@@ -474,50 +474,251 @@
             color: #777;
         }
         /* Responsive Design */
+        @media (max-width: 1200px) {
+            .header-container {
+                padding: 1rem 1.5rem;
+            }
+            .hero h1 {
+                font-size: 3.8rem;
+            }
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+                gap: 2.2rem;
+            }
+        }
         @media (max-width: 992px) {
             .hero h1 {
-                font-size: 3.5rem;
+                font-size: 3.2rem;
+            }
+            .hero p {
+                font-size: 1.3rem;
+            }
+            .hero-promo {
+                font-size: 1.4rem;
             }
             .filters-container {
                 flex-direction: column;
+            }
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                gap: 2rem;
+            }
+            .stats-container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 2rem;
+            }
+            .stat-number {
+                font-size: 3rem;
             }
         }
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
                 gap: 1.2rem;
+                padding: 1rem;
             }
             nav ul {
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 1.5rem;
+                gap: 1.2rem;
+            }
+            nav a {
+                font-size: 1rem;
             }
             .hero {
                 height: 60vh;
+                padding: 0 1rem;
             }
             .hero h1 {
-                font-size: 2.8rem;
+                font-size: 2.5rem;
             }
-            .hero p, .hero-promo {
-                font-size: 1.2rem;
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .hero-promo {
+                font-size: 1.3rem;
             }
             .section-title {
                 font-size: 2.2rem;
             }
+            .section-subtitle {
+                font-size: 1.1rem;
+            }
+            .filters-section {
+                padding: 0 1rem;
+            }
+            .filters-container {
+                padding: 1.8rem;
+            }
+            .filter-group {
+                min-width: 100%;
+            }
+            .filter-group h3 {
+                font-size: 1.2rem;
+            }
+            .filter-option {
+                padding: 0.7rem 1.2rem;
+                font-size: 0.95rem;
+                min-width: 70px;
+            }
+            .products-section {
+                padding: 0 1rem;
+            }
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+                gap: 1.8rem;
+            }
+            .product-brand {
+                font-size: 1rem;
+            }
+            .product-name {
+                font-size: 1.2rem;
+            }
+            .product-price {
+                font-size: 1.2rem;
+            }
+            .stats-section {
+                padding: 3rem 1rem;
+            }
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            .stat-text {
+                font-size: 1.1rem;
+            }
+            .footer-content {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 2rem;
+            }
+            .footer-column h3 {
+                font-size: 1.3rem;
+            }
         }
         @media (max-width: 576px) {
+            .logo {
+                font-size: 1.5rem;
+            }
+            .logo i {
+                font-size: 1.7rem;
+            }
+            nav ul {
+                gap: 1rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
+            .hero {
+                height: 55vh;
+            }
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .hero-promo {
+                font-size: 1.1rem;
+            }
+            .btn {
+                padding: 0.8rem 2rem;
+                font-size: 0.95rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .section-subtitle {
+                font-size: 1rem;
+            }
+            .filters-container {
+                padding: 1.5rem;
+                gap: 1.5rem;
+            }
+            .filter-group h3 {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+            .filter-option {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+                min-width: 60px;
             }
             .products-grid {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .product-image {
+                height: 220px;
+            }
+            .product-info {
+                padding: 1.5rem;
+            }
+            .product-brand {
+                font-size: 0.95rem;
+            }
+            .product-name {
+                font-size: 1.1rem;
+            }
+            .product-price {
+                font-size: 1.1rem;
+            }
+            .product-description {
+                font-size: 0.9rem;
+                min-height: 50px;
+            }
+            .size-option {
+                width: 38px;
+                height: 38px;
+                font-size: 0.9rem;
             }
             .product-actions {
                 flex-direction: column;
             }
-            .btn {
-                padding: 0.8rem 2rem;
+            .btn-outline {
+                font-size: 0.85rem;
+                padding: 0.8rem;
+            }
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            .stat-number {
+                font-size: 2.2rem;
+            }
+            .stat-text {
                 font-size: 1rem;
+            }
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .footer-column h3 {
+                font-size: 1.2rem;
+            }
+            .social-links a {
+                width: 38px;
+                height: 38px;
+            }
+            .copyright {
+                font-size: 0.85rem;
+                padding: 1.5rem 0;
+            }
+        }
+        @media (max-width: 400px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+            .filters-container {
+                padding: 1.2rem;
+            }
+            .product-image {
+                height: 200px;
+            }
+            .stats-container {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -673,8 +874,8 @@
         const products = [
             {
                 id: 1,
-                name: "Air Max 270 React",
-                brand: "nike",
+                name: "NEW BALANCE 530",
+                brand: "newbalance",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44", "45"],
                 image: "foto1.jpeg",
@@ -683,8 +884,8 @@
             },
             {
                 id: 2,
-                name: "Ultraboost 22",
-                brand: "adidas",
+                name: "NEW BALANCE 530",
+                brand: "newbalance",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44"],
                 image: "foto2.jpeg",
@@ -693,8 +894,8 @@
             },
             {
                 id: 3,
-                name: "RS-X Reinvention",
-                brand: "puma",
+                name: "NEW BALANCE 530",
+                brand: "newbalance",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44"],
                 image: "foto3.jpeg",
@@ -703,7 +904,7 @@
             },
             {
                 id: 4,
-                name: "990v5",
+                name: "NEW BALANCE 530",
                 brand: "newbalance",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["40", "41", "42", "43", "44", "45"],
@@ -713,8 +914,8 @@
             },
             {
                 id: 5,
-                name: "Chuck Taylor All Star",
-                brand: "converse",
+                name: "NEW BALANCE 530",
+                brand: "newbalance",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44", "45"],
                 image: "foto5.jpeg",
@@ -723,8 +924,8 @@
             },
             {
                 id: 6,
-                name: "Old Skool",
-                brand: "vans",
+                name: "NEW BALANCE 530",
+                brand: "newbalance",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44"],
                 image: "foto6.jpeg",
@@ -733,8 +934,8 @@
             },
             {
                 id: 7,
-                name: "Classic Leather",
-                brand: "reebok",
+                name: "NEW BALANCE 530",
+                brand: "newbalance",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44"],
                 image: "foto7.jpeg",
@@ -743,7 +944,7 @@
             },
             {
                 id: 8,
-                name: "574 Core",
+                name: "NEW BALANCE 9060",
                 brand: "newbalance",
                 description: " Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["40", "41", "42", "43", "44", "45"],
@@ -753,8 +954,8 @@
             },
             {
                 id: 9,
-                name: "Air Force 1 '07",
-                brand: "nike",
+                name: "NEW BALANCE 9060",
+                brand: "newbalance",
                 description: " Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44", "45"],
                 image: "foto9.jpeg",
@@ -763,8 +964,8 @@
             },
             {
                 id: 10,
-                name: "Superstar",
-                brand: "adidas",
+                name: "NEW BALANCE 550",
+                brand: "newbalance",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44", "45"],
                 image: "foto10.jpeg",
@@ -773,8 +974,8 @@
             },
             {
                 id: 11,
-                name: "Suede Classic",
-                brand: "puma",
+                name: "NEW BALANCE 550",
+                brand: "newbalance",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44"],
                 image: "foto11.jpeg",
@@ -783,8 +984,8 @@
             },
             {
                 id: 12,
-                name: "997 Sport",
-                brand: "newbalance",
+                name: "CAMPUS BAD BUNNY",
+                brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["40", "41", "42", "43", "44", "45"],
                 image: "foto12.jpeg",
@@ -793,8 +994,8 @@
             },
             {
                 id: 13,
-                name: "Gel-Kayano 28",
-                brand: "asics",
+                name: "CAMPUS BAD BUNNY",
+                brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025s",
                 sizes: ["39", "40", "41", "42", "43", "44", "45"],
                 image: "foto13.jpeg",
@@ -803,8 +1004,8 @@
             },
             {
                 id: 14,
-                name: "Curry Flow 9",
-                brand: "underarmour",
+                name: "CAMPUS BAD BUNNY",
+                brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["40", "41", "42", "43", "44", "45"],
                 image: "foto14.jpeg",
@@ -813,8 +1014,8 @@
             },
             {
                 id: 15,
-                name: "Air Jordan 1 Retro High",
-                brand: "nike",
+                name: "CAMPUS  00",
+                brand: "adidas",
                 description:  "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44", "45"],
                 image: "foto15.jpeg",
@@ -823,7 +1024,7 @@
             },
             {
                 id: 16,
-                name: "Stan Smith",
+                name: "CAMPUS  00",
                 brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44", "45"],
@@ -833,8 +1034,8 @@
             },
             {
                 id: 17,
-                name: "Future Rider Play On",
-                brand: "puma",
+                name: "CAMPUS  00",
+                brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44"],
                 image: "foto17.jpeg",
@@ -843,8 +1044,8 @@
             },
             {
                 id: 18,
-                name: "Fresh Foam 1080v11",
-                brand: "newbalance",
+                name: "CAMPUS  00",
+                brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["40", "41", "42", "43", "44", "45", "46"],
                 image: "foto18.jpeg",
@@ -853,8 +1054,8 @@
             },
             {
                 id: 19,
-                name: "One Star Pro",
-                brand: "converse",
+                name: "CAMPUS  00",
+                brand: "adidas",
                 description:"Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44"],
                 image: "foto19.jpeg",
@@ -863,8 +1064,8 @@
             },
             {
                 id: 20,
-                name: "HOVR Phantom 2",
-                brand: "underarmour",
+                name: "CAMPUS  00",
+                brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["40", "41", "42", "43", "44", "45"],
                 image: "foto20.jpeg",
@@ -873,8 +1074,8 @@
             },
             {
                 id: 21,
-                name: "Air Zoom Pegasus 39",
-                brand: "nike",
+                name: "CAMPUS  00",
+                brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44"],
                 image: "foto21.jpeg",
@@ -883,7 +1084,7 @@
             },
             {
                 id: 22,
-                name: "NMD_R1",
+                name: "CAMPUS 00",
                 brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44"],
@@ -893,8 +1094,8 @@
             },
             {
                 id: 23,
-                name: "Cali Dream",
-                brand: "puma",
+                name: "CAMPUS  00",
+                brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43"],
                 image: "foto23.jpeg",
@@ -903,8 +1104,8 @@
             },
             {
                 id: 24,
-                name: "993",
-                brand: "newbalance",
+                name: "CAMPUS  00",
+                brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["40", "41", "42", "43", "44", "45"],
                 image: "foto24.jpeg",
@@ -913,8 +1114,8 @@
             },
             {
                 id: 25,
-                name: "Chuck 70",
-                brand: "converse",
+                name: "AIR FORCE 1",
+                brand: "nike",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44", "45"],
                 image: "foto25.jpeg",
@@ -923,7 +1124,7 @@
             },
             {
                 id: 26,
-                name: "Sk8-Hi",
+                name: "DC",
                 brand: "vans",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44"],
@@ -933,8 +1134,8 @@
             },
             {
                 id: 27,
-                name: "Club C 85",
-                brand: "reebok",
+                name: "PUMA 180",
+                brand: "puma",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44"],
                 image: "foto27.jpeg",
@@ -943,8 +1144,8 @@
             },
             {
                 id: 28,
-                name: "Gel-Nimbus 24",
-                brand: "asics",
+                name: "PUMA 180",
+                brand: "puma",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44", "45"],
                 image: "foto28.jpeg",
@@ -953,8 +1154,8 @@
             },
             {
                 id: 29,
-                name: "Charged Assert 9",
-                brand: "underarmour",
+                name: "PUMA 180",
+                brand: "puma",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["40", "41", "42", "43", "44", "45"],
                 image: "foto29.jpeg",
@@ -963,8 +1164,8 @@
             },
             {
                 id: 30,
-                name: "Blazer Mid '77",
-                brand: "nike",
+                name: "PUMA 180",
+                brand: "puma",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44", "45"],
                 image: "foto30.jpeg",
@@ -973,8 +1174,8 @@
             },
             {
                 id: 31,
-                name: "Gazelle",
-                brand: "adidas",
+                name: "PUMA XL",
+                brand: "puma",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44", "45"],
                 image: "foto31.jpeg",
@@ -983,7 +1184,7 @@
             },
             {
                 id: 32,
-                name: "Carina",
+                name: "PUMA XL",
                 brand: "puma",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44"],
@@ -993,8 +1194,8 @@
             },
             {
                 id: 33,
-                name: "550",
-                brand: "newbalance",
+                name: "ADIDAS 2000",
+                brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["40", "41", "42", "43", "44", "45"],
                 image: "foto33.jpeg",
@@ -1003,8 +1204,8 @@
             },
             {
                 id: 34,
-                name: "Pro Leather",
-                brand: "converse",
+                name: "SUPER STAR",
+                brand: "adidas",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44"],
                 image: "foto34.jpeg",
@@ -1013,8 +1214,8 @@
             },
             {
                 id: 35,
-                name: "Authentic",
-                brand: "vans",
+                name: "NIKE ",
+                brand: "nike",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44"],
                 image: "foto35.jpeg",
@@ -1023,8 +1224,8 @@
             },
             {
                 id: 36,
-                name: "Floatride Energy 3",
-                brand: "reebok",
+                name: "NIKE DN ",
+                brand: "nike",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["40", "41", "42", "43", "44", "45"],
                 image: "foto36.jpeg",
@@ -1033,8 +1234,8 @@
             },
             {
                 id: 37,
-                name: "GT-2000 10",
-                brand: "asics",
+                name: "NIKE",
+                brand: "nike",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44"],
                 image: "foto37.jpeg",
@@ -1043,8 +1244,8 @@
             },
             {
                 id: 38,
-                name: "Lockdown 7",
-                brand: "underarmour",
+                name: "RETRO 4",
+                brand: "nike",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["40", "41", "42", "43", "44", "45"],
                 image: "foto38.jpeg",
@@ -1053,7 +1254,7 @@
             },
             {
                 id: 39,
-                name: "Dunk Low",
+                name: "RETRO 4",
                 brand: "nike",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44", "45"],
@@ -1063,18 +1264,17 @@
             },
             {
                 id: 40,
-                name: "Samba OG",
-                brand: "adidas",
+                name: "RETRO 4",
+                brand: "nike",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44", "45"],
                 image: "foto40.jpeg",
                 badge: "Icono Global",
                 price: "S/ 130"
             },
-            // Nuevos productos 41-44
             {
                 id: 41,
-                name: "Air Max 90",
+                name: "RETRO 4",
                 brand: "nike",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44", "45"],
@@ -1084,8 +1284,8 @@
             },
             {
                 id: 42,
-                name: "Forums Low",
-                brand: "adidas",
+                name: "RETRO 4",
+                brand: "nike",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["38", "39", "40", "41", "42", "43", "44", "45"],
                 image: "foto42.jpeg",
@@ -1094,8 +1294,8 @@
             },
             {
                 id: 43,
-                name: "RS-0",
-                brand: "puma",
+                name: "RETRO 4",
+                brand: "nike",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["39", "40", "41", "42", "43", "44"],
                 image: "foto43.jpeg",
@@ -1104,8 +1304,8 @@
             },
             {
                 id: 44,
-                name: "530",
-                brand: "newbalance",
+                name: "RETRO 4",
+                brand: "nike",
                 description: "Nuevo DS   para mayor informacion al WhatsApp +51 982945025",
                 sizes: ["40", "41", "42", "43", "44", "45"],
                 image: "foto44.jpeg",
